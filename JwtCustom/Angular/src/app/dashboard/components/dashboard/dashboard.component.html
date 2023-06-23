@@ -1,0 +1,7 @@
+<ul *ngIf="model">
+  <li *ngFor="let item of model.items">{{ item }}</li>
+</ul>
+
+<div><button type="button" (click)="refresh()">Refresh</button></div>
+<div><a href="cars/create">Create car</a></div>
+<div><button type="button" (click)="onClick($event)">On click</button></div>
